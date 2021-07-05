@@ -1,0 +1,63 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockSpeed": 1,
+  "ViewMode": "NoDisplay",
+  "EngineSound": false,
+  "SubWindows": [
+    {"WindowID": 2, "CameraName": "0", "ImageType": 0, "VehicleName": "", "Visible": false}
+  ],
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 640,
+        "Height": 480,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      }
+    ]
+  },
+  "Vehicles": {
+    "Copter": {
+      "VehicleType": "ArduCopter",
+      "UseSerial": false,
+      "LocalHostIp": "192.168.31.245",
+      "UdpIp": "192.168.31.60",
+      "UdpPort": 9003,
+      "ControlPort": 9002,
+      "AutoCreate": true,
+      "Sensors": {
+        "Imu": {
+          "SensorType": 2,
+          "Enabled": true
+        },
+        "Gps": {
+          "SensorType": 3,
+          "Enabled": true
+        },
+        "Distance1": {
+          "SensorType": 5,
+          "Enabled": true,
+          "DrawDebugPoints": true,
+          "Yaw": 0, "Pitch": -90, "Roll": 0,
+          "ExternalController": true
+        },
+        "Distance2": {
+          "SensorType": 5,
+          "Enabled": true,
+          "DrawDebugPoints": true,
+          "ExternalController": true
+        }
+      }
+    }
+  }
+}
